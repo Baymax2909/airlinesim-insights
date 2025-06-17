@@ -1,0 +1,1 @@
+//"https://*.airlinesim.aero/app/fleets/aircraft/*/1*"
