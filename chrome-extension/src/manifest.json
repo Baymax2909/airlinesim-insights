@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "name": "AS-Insights Chrome Extension",
+  "description": "Enhance your AirlineSim experience with AS-Insights.",
+  "background": {
+    "service_worker": "background/FlightDetails.js"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content/FlightDetails.js"
+      ],
+      "matches": [
+        "https://*.airlinesim.aero/action/info/flight*"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "https://*.airlinesim.aero/*"
+  ]
+}
